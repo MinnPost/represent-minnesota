@@ -1,0 +1,26 @@
+# Database value
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': '',                      # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
+
+# Wherever this is hosted.
+API_DOMAIN = '127.0.0.1:8000'
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = '+t(q+ljogaj(+7m@kueu-g881gb8xp_oaz)$iabxjp8a1@2#u!'
+
+# If you are working locally, turn Debug on
+DEBUG = True
+
+# Allowed hosts (not sure what is the best value for this, but * will 
+# allow anything and is not that secure)
+ALLOWED_HOSTS = ['*']
+
+# You can override any settings that are in settings.py
