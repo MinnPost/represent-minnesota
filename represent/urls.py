@@ -22,5 +22,5 @@ admin.autodiscover()
 urlpatterns = [
     path('admin/', admin.site.urls),
     url('', include('boundaries.urls')),
-    #url('', include('finder.urls')),
+    url('', include('finder.urls')),
 ]

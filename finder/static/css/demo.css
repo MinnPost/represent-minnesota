@@ -1,0 +1,310 @@
+/**
+ * Main CSS file for the Finder app.
+ */
+ 
+/**
+ * Basics.
+ */
+pre {
+  font-family: monospace;
+  background: #EEEEEE;
+  padding: 3px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Georgia, "Times New Roman", serif
+}
+h2 {
+  margin-top: .5em;
+}
+h3 {
+  margin-top: 1em;
+}
+h4 {
+  font-weight: bold;
+  margin-top: 1em;
+}
+table {
+  width: 100%
+}
+code {
+  background: #EEEEEE;
+  padding: 3px;
+}
+p {
+  margin-top: 10px;
+}
+
+/**
+ * Utility
+ */
+.clearfix {
+  display: inline-block
+}
+html[xmlns] .clearfix {
+  display: block
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+* html .clearfix {
+  height: 1%
+}
+.hidden {
+  display: none;
+}
+
+/**
+ * Layout and media queries.
+ */
+body {
+  background: #ffffff;
+  margin: 0 auto;
+  padding-top: 0;
+}
+body form#location-form input[type="text"] {
+  width: 380px;
+}
+body #outside {
+  width: 648px;
+}
+@media only screen and (min-width: 1212px) { 
+  body {
+    padding-top: 0;
+  }
+  body form#location-form input[type="text"] {
+    width: 380px;
+  }
+  body #outside {
+    width: 1068px
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 480px) { 
+  body {
+    padding-top: 0;
+  }
+  body form#location-form input[type="text"] {
+    width: 300px;
+  }
+  body #outside {
+    width: 396px;
+  }
+}
+@media only screen and (max-width: 479px) { 
+  body {
+    padding-top: 0;
+  }
+  body form#location-form input[type="text"] {
+    width: 150px;
+  }
+  body #page-title {
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.5px;
+  }
+  body #outside {
+    width: 228px;
+  }
+}
+#outside {
+  line-height: 140%;
+  padding: 10px 0;
+  margin: 0 0 10px 0;
+  background: #f1f1f1;
+  text-align: center;
+  display: none;
+}
+#wrap {
+  margin: 0 auto;
+}
+
+/**
+ * General styles for app.
+ */
+a,
+a:visited,
+a:hover,
+a:visited:hover,
+a:focus {
+  color: #801019;
+  text-decoration: none;
+}
+a:hover,
+a:visited:hover,
+a:focus {
+  text-decoration: underline;
+}
+.page-content {
+  display: none;
+}
+.add-more {
+  padding: 1em;
+  margin-top: 2em;
+  display: block;
+  text-align: center;
+  background-color: #DFDFDF;
+  font-weight: bold;
+}
+table tr:nth-child(even) {
+  background: #EFF1F3
+}
+table td {
+  padding: 3px 5px;
+}
+.loading {
+  padding: 1em;
+  margin-top: 2em;
+  text-align: center;
+  font-weight: bold;
+  background-color: #187CC3;
+  color: #FFFFFF;
+}
+.error {
+  padding: 1em;
+  margin-top: 2em;
+  text-align: center;
+  font-weight: bold;
+  background-color: #E63342;
+  color: #FFFFFF;
+}
+
+/**
+ * Navigation
+ */
+#wrap #page-links {
+  float: right;
+}
+#wrap #page-links a.active-page {
+  text-decoration: none;
+  font-weight: bold;
+}
+#wrap #page-links a {
+  margin-right: .5em
+}
+
+/**
+ * Footer
+ */
+#footer {
+  border-top: 3px double #DFDFDF;
+  padding-top: 24px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  clear: both;
+}
+
+/**
+ * Demo page
+ */
+#boundaries .selected {
+  background: #7CC318;
+}
+#boundaries .selected a {
+  color: #FFFFFF;
+}
+#boundaries thead {
+  display: none;
+}
+#boundaries td {
+  border: 0;
+  width: 50%;
+  padding: 7px 5px;
+  margin: 0;
+}
+#form-wrapper {
+  width: 100%;
+  float: left;
+  padding: 10px 0;
+  position: relative;
+}
+#form-wrapper #did-you-mean.highlight {
+  background: #343434;
+  color: #FFFFFF;
+  padding: 5px;
+}
+#form-wrapper #use-current-location {
+  display: none;
+}
+#form-wrapper #use-current-location,
+#form-wrapper #did-you-mean,
+#form-wrapper #not-where-i-am {
+  margin: 0 10px 0 0;
+  padding: 5px;
+  margin-left: -5px;
+}
+#form-wrapper form#location-form {
+  display: none;
+}
+#form-wrapper form#location-form input[type="text"] {
+  margin: 5px 0 10px 0;
+  padding: 4px;
+  height: 20px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+}
+#form-wrapper .disabled-link {
+  text-decoration: none;
+  color: #ccc;
+  cursor: default;
+}
+#form-wrapper #alt-addresses {
+  background: #fff;
+  position: absolute;
+  top: 80px;
+  left: -5px;
+  z-index: 1;
+  padding: 10px 10px 10px 5px;
+  border: 1px solid #ccc;
+  display: none;
+  /* For IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#444444');
+  /* For IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#444444')";
+  /* Firefox */
+  -moz-box-shadow: 2px 2px 10px #444;
+  /* WebKit */
+  -webkit-box-shadow: 2px 2px 10px #444;
+  /* Standard */
+  box-shadow: 2px 2px 10px #444;
+}
+#georesults {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 0;
+}
+#georesults #map_canvas {
+  width: 100%;
+  height: 280px;
+  margin: 0 auto;
+}
+#georesults #resultinfo {
+  width: 100%;
+  margin: 10px auto 0 auto;
+  color: #888;
+}
+#wrap #page-title {
+  border-bottom: 3px double #dfdfdf;
+  padding-top: 48px;
+  clear: both;
+}
+
+/**
+ * Dataset page
+ */
+#wrap .page-content .dataset-table td {
+  width: 50%
+}
+#wrap .page-content .expand-dataset {
+  font-size: .5em
+}
+#wrap .page-content .collapsed {
+  display: none
+}
