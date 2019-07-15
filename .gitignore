@@ -1,7 +1,7 @@
 *.pyc
 *.swp
+.env
 .venv
 .DS_Store
 logs
-settings_override.py
 /static
