@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 represent-boundaries = "*"
 psycopg2-binary = "*"
+django-compressor = "*"
 
 [requires]
 python_version = "3.7"

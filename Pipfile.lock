@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "18df6efc597e493f5b9ac87545651a461e35bd8dc8d290f68acfe7d74ed5a45e"
+            "sha256": "5fbc6d025f4cdceec40c576b00e2a01e5595b884043691c65a3807e8b4cef301"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,14 @@
                 "sha256:c98a7af40062e996b921f5962a1c4f3f0c979fa7885f7be4710cceb90ebe13a6"
             ],
             "version": "==1.0.3"
+        },
+        "django-compressor": {
+            "hashes": [
+                "sha256:7732676cfb9d58498dfb522b036f75f3f253f72ea1345ac036434fdc418c2e57",
+                "sha256:9616570e5b08e92fa9eadc7a1b1b49639cce07ef392fc27c74230ab08075b30f"
+            ],
+            "index": "pypi",
+            "version": "==2.2"
         },
         "psycopg2-binary": {
             "hashes": [
@@ -72,12 +80,24 @@
             ],
             "version": "==2019.1"
         },
+        "rcssmin": {
+            "hashes": [
+                "sha256:ca87b695d3d7864157773a61263e5abb96006e9ff0e021eff90cbe0e1ba18270"
+            ],
+            "version": "==1.0.6"
+        },
         "represent-boundaries": {
             "hashes": [
                 "sha256:dd78e6d42e15a3ba18d8ee70904f2be548b8e7dff00086450958e05214a35684"
             ],
             "index": "pypi",
             "version": "==0.9.4"
+        },
+        "rjsmin": {
+            "hashes": [
+                "sha256:dd9591aa73500b08b7db24367f8d32c6470021f39d5ab4e50c7c02e4401386f1"
+            ],
+            "version": "==1.0.12"
         },
         "six": {
             "hashes": [

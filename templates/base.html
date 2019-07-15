@@ -1,21 +1,83 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+{% load i18n %}{% load staticfiles %}<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css" charset="utf-8"/>
-    {% block head %}{% endblock %}
-    <script src="{{ STATIC_URL }}js/modernizr-2.0.6.min.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{% block title %}{% endblock %}</title>
+<meta name="description" content="{% trans "Find the elected officials and electoral districts for any Canadian address or postal code, at all levels of government" %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
+<link rel="apple-touch-icon" href="{% static "img/apple-touch-icon.png" %}">
+<link rel="canonical" href="https://represent.opennorth.ca{{ request.get_full_path }}">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+{% block css %}
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+{% endblock %}
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
-<body>
-    {% block content %}{% endblock %}
-    {% block foot %}{% endblock %}
+<body {% block bodyattributes %}{% endblock %}>
+
+<nav class="navbar" role="navigation" id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand">
+        <img src="{% static "img/open-north-symbol.png" %}" width="50" height="50" alt="">
+        Represent <span class="hidden-sm hidden-xxs">Civic Information</span> API
+      </span>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">{% trans "Home" %}</a></li>
+        <li><a href="{% url "demo" %}">{% trans "Demo" %}</a></li>
+        <li><a href="{% url "apidoc" %}">{% trans "API" %}</a></li>
+        <li><a href="{% url "data" %}">{% trans "Downloads" %}</a></li>
+        <li><a href="mailto:represent@opennorth.ca">{% trans "Contact" %}</a></li>
+        <li><a href="{% url "set_language" %}?language={% trans "fr" %}">{% trans "FR" %}</a></li>
+        <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="2UNPPB2EDAK9E">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{% block content %}{% endblock %}
+
+{% block footer %}
+<div class="container-fluid banner" id="footer">
+  <p>{% trans 'A project of <a href="http://www.opennorth.ca/">Open North</a>, a nonprofit that builds digital tools for government transparency and civic participation.' %}</p>
+</div>
+{% endblock %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+{% block js %}
+<script src="{% static "js/main.js" %}"></script>
+{% endblock %}
+
+{% if settings.ENABLE_GOOGLE_ANALYTICS and settings.GOOGLE_ANALYTICS_KEY %}
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', '{{ settings.GOOGLE_ANALYTICS_KEY }}', 'auto');
+	ga('send', 'pageview');
+</script>
+{% endif %}
+
 </body>
 </html>

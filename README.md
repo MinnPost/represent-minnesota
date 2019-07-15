@@ -11,3 +11,7 @@ Minnesota based instance of represent-boundaries.
 1. `pipenv shell`
 2. `python manage.py loadshapefiles` (use `--reload` to reload the shapefiles)
 3. `python manage.py runserver`
+
+## Docs
+
+http://represent.poplus.org/docs/reference/
