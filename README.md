@@ -17,7 +17,9 @@ Minnesota based instance of represent-boundaries.
 
 1. heroku pg:psql
 2. ` CREATE EXTENSION postgis;`
-3. `python manage.py loadshapefiles`
+3. `python manage.py loadshapefiles` (for our quantity of data, this takes a long time)
+4. `exit;`
+4. `heroku config:set BUILD_WITH_GEO_LIBRARIES=1` (this potentially takes a long time)
 
 ## Docs
 
