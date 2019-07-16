@@ -68,7 +68,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'represent.urls'
+ROOT_URLCONF = os.getenv('ROOT_URLCONF')
 
 TEMPLATES = [
     {
@@ -93,7 +93,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'represent.wsgi.application'
+WSGI_APPLICATION = os.getenv('WSGI_APPLICATION')
 
 
 # Database
@@ -126,23 +126,16 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_L10N = True
-
-USE_TZ = True
+LANGUAGE_CODE = os.getenv('LANGUAGE_CODE')
+TIME_ZONE     = os.getenv('TIME_ZONE')
+USE_I18N      = os.getenv('USE_I18N')
+USE_L10N      = os.getenv('USE_L10N')
+USE_TZ        = os.getenv('USE_TZ')
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-
-ROOT_URLCONF = 'represent.urls'
-WSGI_APPLICATION = 'represent.wsgi.application'
 
 API_DOMAIN = os.getenv('API_DOMAIN')
