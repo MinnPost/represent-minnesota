@@ -17,8 +17,8 @@ Minnesota based instance of [Represent Boundaries](https://opennorth.github.io/r
 
 ## Heroku setup
 
-1. heroku pg:psql
-2. ` CREATE EXTENSION postgis;`
-3. `python manage.py loadshapefiles` (for our quantity of data, this takes a long time)
-4. `exit;`
-4. `heroku config:set BUILD_WITH_GEO_LIBRARIES=1` (this potentially takes a long time)
+1. Run `heroku pg:psql` to log in to your Heroku Postgres database.
+2. Run `CREATE EXTENSION postgis;` to install the PostGIS extension to Postgres.
+3. Run `exit;` to get out of Postgres.
+4. Run `heroku config:set BUILD_WITH_GEO_LIBRARIES=1` to instruct Heroku to build with geo libraries (this potentially takes a long time). Otherwise you'll run into issues when you try the next step.
+5. Run `python manage.py loadshapefiles` to populate the data Represent Boundaries will use (for our quantity of data, this takes a long time).
