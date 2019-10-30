@@ -240,21 +240,6 @@ boundaries.register('National forests (2008)',
     slug_func=processing.simple_index_namer(['region', 'forest_num'], normalizer=lambda x: x.lstrip('0')),
 )
 
-# Reservation land - broken
-#boundaries.register('Reservation lands (2010)',
-#    file='reservations/2010-mn_leg_gis/',
-#    last_updated=date(2012, 6, 22),
-#    name='Reservation lands (2010)',
-#    singular='Reservation land (2010)',
-#    domain='Minnesota',
-#    authority='Minnesota Legislative Coordinating Commission - GIS Office',
-#    source_url='http://www.gis.leg.mn/metadata/amerind2010.htm',
-#    notes='',
-#    name_func=boundaries.clean_attr('id'),
-#    id_func=boundaries.attr('id'),
-#    slug_func=boundaries.attr('id'),
-#)
-
 # Voting precincts (will take awhile)
 boundaries.register('Voting precincts (2010)',
     file='voting-precincts/2010-mn_leg_gis/',
