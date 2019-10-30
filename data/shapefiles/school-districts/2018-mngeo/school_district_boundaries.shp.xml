@@ -1,0 +1,441 @@
+<metadata xml:lang="en">
+	<Esri>
+		<CreaDate>20181015</CreaDate>
+		<CreaTime>07543300</CreaTime>
+		<SyncOnce>FALSE</SyncOnce>
+		<SyncDate>20181221</SyncDate>
+		<SyncTime>00370400</SyncTime>
+		<ModDate>20181221</ModDate>
+		<ModTime>00370400</ModTime>
+		<DataProperties>
+			<lineage>
+				<Process Name="FeatureClassToFeatureClass_4" ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20070308" Time="083615">FeatureClassToFeatureClass C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\School_District.mdb\Attendance Attendance_Poly # "AREA AREA false false true 8 Double 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,AREA,-1,-1;PERIMETER PERIMETER false false true 8 Double 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,PERIMETER,-1,-1;SDATT06_ SDATT06_ false false true 4 Long 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,SDATT06#,-1,-1;SDATT06_ID SDATT06_ID true false true 4 Long 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,SDATT06-ID,-1,-1;SDNUM SD# true false false 4 Short 0 4 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,SDNUM,-1,-1;SDNAME SDNAME true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,SDNAME,-1,-1;ELEM_NAME ELEM true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,ELEM_NAME,-1,-1;ELEM_ORGID ORGID_REL true false false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,ELEM_ORGID,-1,-1;ELEM_PERC ELEM_PERC true false false 6 Float 2 5 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,ELEM_PERC,-1,-1;ELEM_MULTI ELEM_MULTI true false false 1 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,ELEM_MULTI,-1,-1;MIDD_NAME MIDD true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,MIDD_NAME,-1,-1;MIDD_ORGID MIDD_ORGID true false false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,MIDD_ORGID,-1,-1;MIDD_PERC MIDD_PERC true false false 6 Float 2 5 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,MIDD_PERC,-1,-1;MIDD_MULTI MIDD_MULTI true false false 1 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,MIDD_MULTI,-1,-1;HIGH_NAME HIGH true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,HIGH_NAME,-1,-1;HIGH_ORGID HIGH_ORGID true false false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,HIGH_ORGID,-1,-1;HIGH_PERC HIGH_PERC true false false 6 Float 2 5 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,HIGH_PERC,-1,-1;HIGH_MULTI HIGH_MULTI true false false 1 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,HIGH_MULTI,-1,-1;BDRY_CHG BDRY_CHG true false false 1 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,BDRY_CHG,-1,-1;LMICID LMICID true false false 2 Short 0 2 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,LMICID,-1,-1;DATE_ DATE_ true false false 10 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,DATE,-1,-1;COMMENT COMMENT true false false 100 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,COMMENT,-1,-1;PREV_SDNUM PREV_SDNUM true false false 4 Short 0 4 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,PREV_SDNUM,-1,-1;PREV_SDNAME PREV_SDNAME true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,PREV_SDNAME,-1,-1;PREV_ELEM PREV_ELEM true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,PREV_ELEM,-1,-1;PREV_ELEM_ORGID PREV_ELEM_ORGID true false false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,PREV_ELEM_ORGID,-1,-1;PREV_MIDD PREV_MIDD true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,PREV_MIDD,-1,-1;PREV_MIDD_ORGID PREV_MIDD_ORGID true false false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,PREV_MIDD_ORGID,-1,-1;PREV_HIGH PREV_HIGH true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,PREV_HIGH,-1,-1;PREV_HIGH_ORGID PREV_HIGH_ORGID true false false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,PREV_HIGH_ORGID,-1,-1;NEW_SDNUM NEW_SDNUM true false false 4 Short 0 4 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,NEW_SDNUM,-1,-1;NEW_SDNAME NEW_SDNAME true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,NEW_SDNAME,-1,-1;NEW_ELEM NEW_ELEM true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,NEW_ELEM,-1,-1;NEW_ELEM_ORGID NEW_ELEM_ORGID true false false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,NEW_ELEM_ORGID,-1,-1;NEW_MIDD NEW_MIDD true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,NEW_MIDD,-1,-1;NEW_MIDD_ORGID NEW_MIDD_ORGID true false false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,NEW_MIDD_ORGID,-1,-1;NEW_HIGH NEW_HIGH true false false 40 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,NEW_HIGH,-1,-1;NEW_HIGH_ORGID NEW_HIGH_ORGID true false false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\sdatt06\polygon,NEW_HIGH_ORGID,-1,-1" # C:\ArcGIS_Projects\School_Data\SY2006_07\Data\GIS\State\School_District.mdb\Attendance\Attendance_Poly</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\Append" Date="20091123" Time="105038">Append cook Attendance_Poly NO_TEST "AREA 'AREA' false true true 8 Double 0 0 ,First,#;PERIMETER 'PERIMETER' false true true 8 Double 0 0 ,First,#;SDATT06_ 'SDATT06_' false true true 4 Long 0 0 ,First,#;SDATT06_ID 'SDATT06_ID' true true true 4 Long 0 0 ,First,#;SDNUM 'SD#' true true false 2 Short 0 0 ,First,#;SDNAME 'SDNAME' true true false 40 Text 0 0 ,First,#;ELEM_NAME 'ELEM' true true false 40 Text 0 0 ,First,#;ELEM_ORGID 'ELEM_ORGID' true true false 12 Text 0 0 ,First,#;ELEM_PERC 'ELEM_PERC' true true false 4 Float 0 0 ,First,#;ELEM_MULTI 'ELEM_MULTI' true true false 1 Text 0 0 ,First,#;MIDD_NAME 'MIDD' true true false 40 Text 0 0 ,First,#;MIDD_ORGID 'MIDD_ORGID' true true false 12 Text 0 0 ,First,#;MIDD_PERC 'MIDD_PERC' true true false 4 Float 0 0 ,First,#;MIDD_MULTI 'MIDD_MULTI' true true false 1 Text 0 0 ,First,#;HIGH_NAME 'HIGH' true true false 40 Text 0 0 ,First,#;HIGH_ORGID 'HIGH_ORGID' true true false 12 Text 0 0 ,First,#;HIGH_PERC 'HIGH_PERC' true true false 4 Float 0 0 ,First,#;HIGH_MULTI 'HIGH_MULTI' true true false 1 Text 0 0 ,First,#;BDRY_CHG 'BDRY_CHG' true true false 1 Text 0 0 ,First,#;LMICID 'LMICID' true true false 2 Short 0 0 ,First,#;DATE_ 'DATE_' true true false 10 Text 0 0 ,First,#;COMMENT 'COMMENT' true true false 100 Text 0 0 ,First,#;PREV_SDNUM 'P_SDNUM' true true false 2 Short 0 0 ,First,#;PREV_SDNAME 'P_SDNAME' true true false 40 Text 0 0 ,First,#;PREV_ELEM 'P_ELEM' true true false 40 Text 0 0 ,First,#;PREV_ELEM_ORGID 'PE_ORGID' true true false 12 Text 0 0 ,First,#;PREV_MIDD 'P_MIDD' true true false 40 Text 0 0 ,First,#;PREV_MIDD_ORGID 'PM_ORGID' true true false 12 Text 0 0 ,First,#;PREV_HIGH 'P_HIGH' true true false 40 Text 0 0 ,First,#;PREV_HIGH_ORGID 'PH_ORGID' true true false 12 Text 0 0 ,First,#;NEW_SDNUM 'NEW_SDNUM' true true false 2 Short 0 0 ,First,#;NEW_SDNAME 'NEW_SDNAME' true true false 40 Text 0 0 ,First,#;NEW_ELEM 'N_ELEM' true true false 40 Text 0 0 ,First,#;NEW_ELEM_ORGID 'NE_ORGID' true true false 12 Text 0 0 ,First,#;NEW_MIDD 'N_MIDD' true true false 40 Text 0 0 ,First,#;NEW_MIDD_ORGID 'NM_ORGID' true true false 12 Text 0 0 ,First,#;NEW_HIGH 'N_HIGH' true true false 40 Text 0 0 ,First,#;NEW_HIGH_ORGID 'NH_ORGID' true true false 12 Text 0 0 ,First,#;Shape_Length 'Shape_Length' false true true 8 Double 0 0 ,First,#;Shape_Area 'Shape_Area' false true true 8 Double 0 0 ,First,#,C:\MDEFNS_Data\Spatial_Data\SD_Data\SY2010-11\Temp_Datasets\cook.shp,Shape_area,-1,-1;DONE 'DONE' true true false 1 Text 0 0 ,First,#;EDIT_DATE 'EDIT_DATE' true true false 10 Text 0 0 ,First,#;EDIT_COMM 'EDIT_COMM' true true false 100 Text 0 0 ,First,#;OUTSIDE_DONE 'OUTSIDE_DONE' true true false 3 Text 0 0 ,First,#" # Attendance_Poly</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="104129">CalculateField Attendance_Poly ELEM_PERC 0 VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="104139">CalculateField Attendance_Poly MNAME [MIDD_NAME] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="104149">CalculateField Attendance_Poly HNAME [HIGH_NAME] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="104551">CalculateField Attendance_Poly E_ORGID [ELEM_ORGID] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="104558">CalculateField Attendance_Poly E_NAME [ELEM_NAME] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="104607">CalculateField Attendance_Poly SDNAM [SDNAME] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="104614">CalculateField Attendance_Poly SD [SDNUM] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="105604">CalculateField Attendance_Poly ELEM_ORGID [E_ORGID] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="105616">CalculateField Attendance_Poly ELEM_NAME [E_NAME] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="105702">CalculateField Attendance_Poly ELEM_PERC 0.00 VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="105747">CalculateField Attendance_Poly MIDD_NAME [MNAME] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="105959">CalculateField Attendance_Poly SDNUM [SD] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="110009">CalculateField Attendance_Poly SDNAME [SDNAM] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="110202">CalculateField Attendance_Poly ELEM_NAME [E_NAME] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="110447">CalculateField Attendance_Poly MIDD_NAME [MNAME] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120606" Time="110459">CalculateField Attendance_Poly HIGH_NAME [HNAME] VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120607" Time="090234">CalculateField Attendance_Poly ELEM_PERC 0 VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120607" Time="090248">CalculateField Attendance_Poly HIGH_PERC 0 VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120607" Time="090256">CalculateField Attendance_Poly MIDD_PERC 0 VB #</Process>
+				<Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120717" Time="103845">CalculateField Attendance_Poly MIDD_ORGID "010709225000" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20120814" Time="083357">CalculateField Attendance_Poly MIDD_ORGID "0" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="075420">CalculateField Attendance_Poly MULT_ATTEN "N" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="075734">CalculateField Attendance_Poly MULT_ATTEN "" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="080123">CalculateField Attendance_Poly MULT_ATTEN "N" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="083037">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="083048">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="083058">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="084552">CalculateField Attendance_Poly MULT_ATTEN "N" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="084646">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="084814">CalculateField Attendance_Poly MULT_ATTEN "N" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="084905">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="085419">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="085856">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="090115">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="090137">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="090149">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="090338">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="090430">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files\arcgis\desktop10.1\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20130522" Time="090728">CalculateField Attendance_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.2\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20140212" Time="092053">CalculateField Attendance_Poly MIDD_MULTI "N" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20160503" Time="074429">CalculateField SDE.attend_Poly MULT_ATTEN "N" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20160503" Time="074540">CalculateField SDE.attend_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20160503" Time="074622">CalculateField SDE.attend_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20160503" Time="074652">CalculateField SDE.attend_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20170504" Time="082122">CalculateField SDE.attend_Poly MULT_ATTEN "N" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20170504" Time="082246">CalculateField SDE.attend_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20170504" Time="082656">CalculateField SDE.attend_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20170504" Time="082952">CalculateField SDE.attend_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20170504" Time="083513">CalculateField SDE.attend_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20170504" Time="083853">CalculateField SDE.attend_Poly MULT_ATTEN "Y" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\Dissolve" Date="20180927" Time="094223">Dissolve SDE_attend_poly C:\ArcGIS_Projects\Temp\Use_For_Testing.gdb\sd_v1 SDNUM;SDNAME # MULTI_PART DISSOLVE_LINES</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20180927" Time="094411">CalculateField sd_v1 UNI_TYPE 1 VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20180927" Time="094424">CalculateField sd_v1 UNI_MAJ [SDNUM] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20180927" Time="094817">CalculateField sd_v1 UNI_TYPE 3 VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20180927" Time="094842">CalculateField sd_v1 UNI_TYPE 2 VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20180927" Time="094923">CalculateField sd_v1 UNI_NAM [SDNAME] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20180927" Time="094956">CalculateField sd_v1 UNI_NAM [SDNAME] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20180927" Time="095728">CalculateField sd_v1 SQMILES "[Shape_Area] * .0000003861003" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20180927" Time="095744">CalculateField sd_v1 ACRES "[Shape_Area] * .0002471054" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20180927" Time="110319">FeatureClassToFeatureClass C:\ArcGIS_Projects\Temp\Use_For_Testing.gdb\sd_v1 "Database Connections\Edu-sql2014prod.sde\sde.SDE.District" school_district_sep2018 # "UNI_TYPE "UNI_TYPE" true true false 2 Short 0 0 ,First,#,C:\ArcGIS_Projects\Temp\Use_For_Testing.gdb\sd_v1,UNI_TYPE,-1,-1;UNI_MAJ "UNI_MAJ" true true false 2 Short 0 0 ,First,#,C:\ArcGIS_Projects\Temp\Use_For_Testing.gdb\sd_v1,UNI_MAJ,-1,-1;UNI_NAM "UNI_NAM" true true false 50 Text 0 0 ,First,#,C:\ArcGIS_Projects\Temp\Use_For_Testing.gdb\sd_v1,UNI_NAM,-1,-1;SQMILES "SQMILES" true true false 8 Double 0 0 ,First,#,C:\ArcGIS_Projects\Temp\Use_For_Testing.gdb\sd_v1,SQMILES,-1,-1;ACRES "ACRES" true true false 8 Double 0 0 ,First,#,C:\ArcGIS_Projects\Temp\Use_For_Testing.gdb\sd_v1,ACRES,-1,-1;SD_ORGID "SD_ORGID" true true false 8 Double 0 0 ,First,#,C:\ArcGIS_Projects\Temp\Use_For_Testing.gdb\sd_v1,SD_ORGID,-1,-1;WEB_URL "WEB_URL" true true false 150 Text 0 0 ,First,#,C:\ArcGIS_Projects\Temp\Use_For_Testing.gdb\sd_v1,WEB_URL,-1,-1" #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20181015" Time="070921">FeatureClassToFeatureClass "Database Connections\Edu-sql2014prod.sde\sde.SDE.District\sde.SDE.school_district" C:\ArcGIS_Projects\GIS_SD_Data\SD_Data\SY2018-19\Final_Datasets\MnGeo\fgdb_district\bdry_school_district_boundaries.gdb DISTRICT2 # "UNI_TYPE "UNI_TYPE" true true false 2 Short 0 5 ,First,#,Database Connections\Edu-sql2014prod.sde\sde.SDE.District\sde.SDE.school_district,UNI_TYPE,-1,-1;UNI_MAJ "UNI_MAJ" true true false 2 Short 0 5 ,First,#,Database Connections\Edu-sql2014prod.sde\sde.SDE.District\sde.SDE.school_district,UNI_MAJ,-1,-1;UNI_NAM "UNI_NAM" true true false 50 Text 0 0 ,First,#,Database Connections\Edu-sql2014prod.sde\sde.SDE.District\sde.SDE.school_district,UNI_NAM,-1,-1" #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="073011">CalculateField district2 NAME [UNI_NAM] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="073027">CalculateField district2 TYP "03" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="073100">CalculateField district2 TYP "01" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="073108">CalculateField district2 MAJ "0" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="073206">CalculateField district2 NAME "Airport" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="073449">CalculateField district2 NAME "Minneapolis-Saint Paul Intl Airport" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="073527">CalculateField district2 MAJ "0000" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="074147">CalculateField district2 UNI_TYP [TYP] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="074155">CalculateField district2 UNI_MAJ [MAJ] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="074202">CalculateField district2 UNI_NAM [NAME] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="074426">CalculateField district2 SQMILES "[Shape_Area] * .0000003861003" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="074440">CalculateField district2 ACRES "[Shape_Area] * .0002471054" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="074731">CalculateField district2 ORGID "0" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="080440">CalculateField district2 ORG [ORGID] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="080623">CalculateField district2 ORG1 [ORG] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="080649">CalculateField district2 ORG1 [ORGID] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="080720">CalculateField district2 ORG1 [ORG] VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="080753">CalculateField district2 ORG1 "" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="081754">CalculateField district2 WEB_URL "http://www.mpls.k12.mn.us" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="081837">CalculateField district2 WEB_URL "http://www.sspps.org" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20181015" Time="081937">CalculateField district2 ORGID "030001000000" VB #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.6\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20181015" Time="082302">FeatureClassToFeatureClass C:\ArcGIS_Projects\Temp\district2.shp C:\ArcGIS_Projects\GIS_SD_Data\SD_Data\SY2018-19\Final_Datasets\MnGeo\fgdb_district\bdry_school_district_boundaries.gdb district3 # "UNI_TYP "UNI_TYP" true true false 2 Text 0 0 ,First,#,C:\ArcGIS_Projects\Temp\district2.shp,UNI_TYP,-1,-1;UNI_MAJ "UNI_MAJ" true true false 4 Text 0 0 ,First,#,C:\ArcGIS_Projects\Temp\district2.shp,UNI_MAJ,-1,-1;UNI_NAM "UNI_NAM" true true false 50 Text 0 0 ,First,#,C:\ArcGIS_Projects\Temp\district2.shp,UNI_NAM,-1,-1;ORGID "ORGID" true true false 12 Text 0 0 ,First,#,C:\ArcGIS_Projects\Temp\district2.shp,ORGID,-1,-1;SQMILES "SQMILES" true true false 19 Double 0 0 ,First,#,C:\ArcGIS_Projects\Temp\district2.shp,SQMILES,-1,-1;ACRES "ACRES" true true false 19 Double 0 0 ,First,#,C:\ArcGIS_Projects\Temp\district2.shp,ACRES,-1,-1;WEB_URL "WEB_URL" true true false 75 Text 0 0 ,First,#,C:\ArcGIS_Projects\Temp\district2.shp,WEB_URL,-1,-1" #</Process>
+				<Process ToolSource="C:\program files\arcgis\server\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20181221" Time="003704">FeatureClassToFeatureClass /var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries /var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\shp school_district_boundaries.shp # "UNI_TYP "UNI_TYP" true true false 2 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries,UNI_TYP,-1,-1;UNI_MAJ "UNI_MAJ" true true false 4 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries,UNI_MAJ,-1,-1;UNI_NAM "UNI_NAM" true true false 50 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries,UNI_NAM,-1,-1;ORGID "ORGID" true true false 12 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries,ORGID,-1,-1;SQMILES "SQMILES" true true false 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries,SQMILES,-1,-1;ACRES "ACRES" true true false 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries,ACRES,-1,-1;WEB_URL "WEB_URL" true true false 75 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries,WEB_URL,-1,-1;Shape_Leng "Shape_Leng" false true true 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries,Shape_Length,-1,-1;Shape_Area "Shape_Area" false true true 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_mde\bdry_school_district_boundaries\fgdb\bdry_school_district_boundaries.gdb\school_district_boundaries,Shape_Area,-1,-1" #</Process>
+			</lineage>
+			<itemProps>
+				<itemLocation>
+					<linkage Sync="TRUE">file://\\g46palgdrftp001\Z\var\ftp\gdrs_temp\update\us_mn_state_mde\bdry_school_district_boundaries\shp\school_district_boundaries.shp</linkage>
+					<protocol Sync="TRUE">Local Area Network</protocol>
+				</itemLocation>
+				<itemName Sync="TRUE">school_district_boundaries</itemName>
+				<imsContentType Sync="TRUE">002</imsContentType>
+				<itemSize Sync="TRUE">0.000</itemSize>
+			</itemProps>
+			<coordRef>
+				<type Sync="TRUE">Projected</type>
+				<geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn>
+				<csUnits Sync="TRUE">Linear Unit: Meter (1.000000)</csUnits>
+				<projcsn Sync="TRUE">NAD_1983_UTM_Zone_15N</projcsn>
+				<peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.4'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_UTM_Zone_15N&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,500000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-93.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9996],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0],AUTHORITY[&amp;quot;EPSG&amp;quot;,26915]]&lt;/WKT&gt;&lt;XOrigin&gt;-5120900&lt;/XOrigin&gt;&lt;YOrigin&gt;-9998100&lt;/YOrigin&gt;&lt;XYScale&gt;450445547.3910538&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;26915&lt;/WKID&gt;&lt;LatestWKID&gt;26915&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml>
+			</coordRef>
+		</DataProperties>
+		<ArcGISFormat>1.0</ArcGISFormat>
+	</Esri>
+	<idinfo>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.2.2.1350</native>
+		<descript>
+			<langdata Sync="TRUE">en</langdata>
+			<abstract>REQUIRED: A brief narrative summary of the data set.</abstract>
+			<purpose>REQUIRED: A summary of the intentions with which the data set was developed.</purpose>
+		</descript>
+		<citation>
+			<citeinfo>
+				<origin>REQUIRED: The name of an organization or individual that developed the data set.</origin>
+				<pubdate>REQUIRED: The date when the data set is published or otherwise made available for release.</pubdate>
+				<title Sync="TRUE">Attendance_Poly</title>
+				<ftname Sync="TRUE">Attendance_Poly</ftname>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<onlink Sync="TRUE">\\ITDBX6K391\C$\MDEFNS_Data\Spatial_Data\SD_Data\SY2008-09\Final_Datasets\School_District.mdb</onlink>
+			</citeinfo>
+		</citation>
+		<timeperd>
+			<current>REQUIRED: The basis on which the time period of content information is determined.</current>
+			<timeinfo>
+				<sngdate>
+					<caldate>REQUIRED: The year (and optionally month, or month and day) for which the data set corresponds to the ground.</caldate>
+				</sngdate>
+			</timeinfo>
+		</timeperd>
+		<status>
+			<progress>REQUIRED: The state of the data set.</progress>
+			<update>REQUIRED: The frequency with which changes and additions are made to the data set after the initial data set is completed.</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-97.269854</westbc>
+				<eastbc Sync="TRUE">-89.389133</eastbc>
+				<northbc Sync="TRUE">49.404415</northbc>
+				<southbc Sync="TRUE">43.435253</southbc>
+			</bounding>
+			<lboundng>
+				<leftbc Sync="TRUE">189775.329000</leftbc>
+				<rightbc Sync="TRUE">762236.955000</rightbc>
+				<bottombc Sync="TRUE">4816290.788100</bottombc>
+				<topbc Sync="TRUE">5472414.205100</topbc>
+			</lboundng>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>REQUIRED: Reference to a formally registered thesaurus or a similar authoritative source of theme keywords.</themekt>
+				<themekey>REQUIRED: Common-use word or phrase used to describe the subject of the data set.</themekey>
+			</theme>
+		</keywords>
+		<accconst>REQUIRED: Restrictions and legal prerequisites for accessing the data set.</accconst>
+		<useconst>REQUIRED: Restrictions and legal prerequisites for using the data set after access is granted.</useconst>
+		<natvform Sync="TRUE">Personal GeoDatabase Feature Class</natvform>
+	</idinfo>
+	<dataIdInfo>
+		<envirDesc Sync="TRUE">Microsoft Windows XP Professional x64 Edition Version 5.2 (Build 3790) Service Pack 2; Esri ArcGIS 10.4.1.5686</envirDesc>
+		<dataLang>
+			<languageCode Sync="TRUE" value="en"/>
+			<countryCode value="US" Sync="TRUE"/>
+		</dataLang>
+		<idCitation>
+			<resTitle Sync="TRUE">school_district_boundaries</resTitle>
+			<presForm>
+				<PresFormCd Sync="TRUE" value="005"/>
+			</presForm>
+		</idCitation>
+		<spatRpType>
+			<SpatRepTypCd Sync="TRUE" value="001"/>
+		</spatRpType>
+		<dataExt>
+			<geoEle>
+				<GeoBndBox esriExtentType="native">
+					<westBL Sync="TRUE">189775.329</westBL>
+					<eastBL Sync="TRUE">762236.955</eastBL>
+					<northBL Sync="TRUE">5472414.2051</northBL>
+					<southBL Sync="TRUE">4816290.7881</southBL>
+					<exTypeCode Sync="TRUE">1</exTypeCode>
+				</GeoBndBox>
+			</geoEle>
+		</dataExt>
+		<geoBox esriExtentType="decdegrees">
+			<westBL Sync="TRUE">-97.269854</westBL>
+			<eastBL Sync="TRUE">-89.389133</eastBL>
+			<northBL Sync="TRUE">49.404415</northBL>
+			<southBL Sync="TRUE">43.435253</southBL>
+			<exTypeCode Sync="TRUE">1</exTypeCode>
+		</geoBox>
+	</dataIdInfo>
+	<metainfo>
+		<langmeta Sync="TRUE">en</langmeta>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntper>REQUIRED: The person responsible for the metadata information.</cntper>
+					<cntorg>REQUIRED: The organization responsible for the metadata information.</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>REQUIRED: The mailing and/or physical address for the organization or individual.</addrtype>
+					<city>REQUIRED: The city of the address.</city>
+					<state>REQUIRED: The state or province of the address.</state>
+					<postal>REQUIRED: The ZIP or other postal code of the address.</postal>
+				</cntaddr>
+				<cntvoice>REQUIRED: The telephone number by which individuals can speak to the organization or individual.</cntvoice>
+			</cntinfo>
+		</metc>
+		<metd Sync="TRUE">20071120</metd>
+	</metainfo>
+	<mdLang>
+		<languageCode Sync="TRUE" value="en"/>
+		<countryCode value="US" Sync="TRUE"/>
+	</mdLang>
+	<mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName>
+	<mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer>
+	<mdChar>
+		<CharSetCd Sync="TRUE" value="004"/>
+	</mdChar>
+	<mdHrLv>
+		<ScopeCd Sync="TRUE" value="005"/>
+	</mdHrLv>
+	<mdHrLvName Sync="TRUE">dataset</mdHrLvName>
+	<distinfo>
+		<resdesc Sync="TRUE">Downloadable Data</resdesc>
+	</distinfo>
+	<distInfo>
+		<distributor>
+			<distorTran>
+				<onLineSrc>
+					<orDesc Sync="TRUE">002</orDesc>
+					<linkage Sync="TRUE">file://\\ITDBX6K391\C$\MDEFNS_Data\Spatial_Data\SD_Data\SY2008-09\Final_Datasets\School_District.mdb</linkage>
+					<protocol Sync="TRUE">Local Area Network</protocol>
+				</onLineSrc>
+			</distorTran>
+			<distorFormat>
+				<formatName Sync="TRUE">Personal GeoDatabase Feature Class</formatName>
+			</distorFormat>
+		</distributor>
+		<distFormat>
+			<formatName Sync="TRUE">Shapefile</formatName>
+		</distFormat>
+		<distTranOps>
+			<transSize Sync="TRUE">0.000</transSize>
+		</distTranOps>
+	</distInfo>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<esriterm Name="school_district_boundaries">
+				<efeatyp Sync="TRUE">Simple</efeatyp>
+				<efeageom code="4" Sync="TRUE"/>
+				<esritopo Sync="TRUE">FALSE</esritopo>
+				<efeacnt Sync="TRUE">0</efeacnt>
+				<spindex Sync="TRUE">FALSE</spindex>
+				<linrefer Sync="TRUE">FALSE</linrefer>
+			</esriterm>
+		</ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<cordsysn>
+				<geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn>
+				<projcsn Sync="TRUE">NAD_1983_UTM_Zone_15N</projcsn>
+			</cordsysn>
+			<planar>
+				<planci>
+					<plance Sync="TRUE">coordinate pair</plance>
+					<plandu Sync="TRUE">meters</plandu>
+					<coordrep>
+						<absres Sync="TRUE">0.000100</absres>
+						<ordres Sync="TRUE">0.000100</ordres>
+					</coordrep>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn Sync="TRUE">North American Datum of 1983</horizdn>
+				<ellips Sync="TRUE">Geodetic Reference System 80</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257222</denflat>
+			</geodetic>
+		</horizsys>
+		<vertdef>
+			<altsys>
+				<altenc Sync="TRUE">Explicit elevation coordinate included with horizontal coordinates</altenc>
+				<altres Sync="TRUE">0.000100</altres>
+			</altsys>
+		</vertdef>
+	</spref>
+	<refSysInfo>
+		<RefSystem>
+			<refSysID>
+				<identCode Sync="TRUE" code="26915">NAD_1983_UTM_Zone_15N</identCode>
+				<idCodeSpace Sync="TRUE">EPSG</idCodeSpace>
+				<idVersion Sync="TRUE">6.13(3.0.1)</idVersion>
+			</refSysID>
+		</RefSystem>
+	</refSysInfo>
+	<spatRepInfo>
+		<VectSpatRep>
+			<geometObjs Name="school_district_boundaries">
+				<geoObjTyp>
+					<GeoObjTypCd value="002" Sync="TRUE"/>
+				</geoObjTyp>
+				<geoObjCnt Sync="TRUE">0</geoObjCnt>
+			</geometObjs>
+			<topLvl>
+				<TopoLevCd value="001" Sync="TRUE"/>
+			</topLvl>
+		</VectSpatRep>
+	</spatRepInfo>
+	<eainfo>
+		<detailed Name="school_district_boundaries">
+			<enttyp>
+				<enttypl Sync="TRUE">school_district_boundaries</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt>
+				<enttypc Sync="TRUE">0</enttypc>
+			</enttyp>
+			<attr>
+				<attrlabl Sync="TRUE">FID</attrlabl>
+				<attalias Sync="TRUE">FID</attalias>
+				<attrtype Sync="TRUE">OID</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Internal feature number.</attrdef>
+				<attrdefs Sync="TRUE">Esri</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">UNI_MAJ</attrlabl>
+				<attalias Sync="TRUE">UNI_MAJ</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">UNI_TYP</attrlabl>
+				<attalias Sync="TRUE">UNI_TYP</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">2</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">UNI_NAM</attrlabl>
+				<attalias Sync="TRUE">UNI_NAM</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">50</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape</attrlabl>
+				<attalias Sync="TRUE">Shape</attalias>
+				<attrtype Sync="TRUE">Geometry</attrtype>
+				<attwidth Sync="TRUE">0</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Feature geometry.</attrdef>
+				<attrdefs Sync="TRUE">ESRI</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Coordinates defining the features.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ORGID</attrlabl>
+				<attalias Sync="TRUE">ORGID</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">12</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SQMILES</attrlabl>
+				<attalias Sync="TRUE">SQMILES</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ACRES</attrlabl>
+				<attalias Sync="TRUE">ACRES</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">WEB_URL</attrlabl>
+				<attalias Sync="TRUE">WEB_URL</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">75</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape_Leng</attrlabl>
+				<attalias Sync="TRUE">Shape_Leng</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape_Area</attrlabl>
+				<attalias Sync="TRUE">Shape_Area</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef>
+				<attrdefs Sync="TRUE">Esri</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Positive real numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+		</detailed>
+	</eainfo>
+	<mdDateSt Sync="TRUE">20181221</mdDateSt>
+</metadata>

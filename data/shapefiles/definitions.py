@@ -182,6 +182,18 @@ boundaries.register('School districts (2013)',
     id_func=processing.simple_index_namer(['sdnum']),
     slug_func=processing.simple_index_namer(['sdnum']),
 )
+boundaries.register('School districts (2018)',
+    file='school-districts/2018-mngeo',
+    name='School districts (2018)'
+    singular='School district (2018)',
+    domain='Minnesota',
+    authority='Minnesota Department of Education',
+    source_url='https://gisdata.mn.gov/dataset/bdry-school-district-boundaries',
+    notes='Aitkin and Minneapolis share same ID',
+    name_func=processing.simple_index_namer(['UNI_MAJ']),
+    id_func=processing.simple_index_namer(['UNI_MAJ']),
+    slug_func=processing.simple_index_namer(['UNI_MAJ']),
+)
 
 # Cenus tracts - broken
 #boundaries.register('Census tracts (2011)',
