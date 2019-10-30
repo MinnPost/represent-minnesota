@@ -99,20 +99,7 @@ boundaries.register('State House districts (2012)',
     slug_func=boundaries.attr('district'),
 )
 
-# State Senate - broken
-boundaries.register('State Senate districts (2002)',
-    file='state-senate-districts/2002-census/tl_2010_27_sldu10/',
-    last_updated=date(2012, 5, 3),
-    name='State Senate districts (2002)',
-    singular='State Senate district (2002)',
-    domain='Minnesota',
-    authority='U.S. Census Bureau TIGER lines',
-    source_url='http://www.census.gov/cgi-bin/geo/shapefiles2010/main',
-    notes='These districts were defined in 2002.',
-    name_func=processing.simple_index_namer(['sldust10'], normalizer=lambda x: x.lstrip('0')),
-    id_func=processing.simple_index_namer(['geoid10']),
-    slug_func=processing.simple_index_namer(['sldust10']),
-)
+# State Senate
 boundaries.register('State Senate districts (2012)', 
     file='state-senate-districts/2012-mn_leg_gis/S2012/',
     last_updated=date(2012, 5, 3),
@@ -123,8 +110,8 @@ boundaries.register('State Senate districts (2012)',
     source_url='http://www.gis.leg.mn/redist2010/plans.html',
     notes='These districts were defined in 2012.',
     name_func=boundaries.clean_attr('district'),
-    id_func=boundaries.attr('id'),
-    slug_func=boundaries.attr('id'),
+    id_func=boundaries.attr('district'),
+    slug_func=boundaries.attr('district'),
 )
 
 # Congress
