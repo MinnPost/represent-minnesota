@@ -195,21 +195,6 @@ boundaries.register('School districts (2018)',
     slug_func=processing.simple_index_namer(['UNI_MAJ']),
 )
 
-# Cenus tracts - broken
-#boundaries.register('Census tracts (2011)',
-#    file='census-tracts/2011-census/',
-#    last_updated=date(2012, 6, 22),
-#    name='Census tracts (2011)',
-#    singular='Census tract (2011)',
-#    domain='Minnesota',
-#    authority='U.S. Census Bureau TIGER lines',
-#    source_url='http://www.census.gov/cgi-bin/geo/shapefiles2011/main',
-#    notes='',
-#    name_func=boundaries.clean_attr('name'),
-#    id_func=boundaries.attr('geoid'),
-#    slug_func=boundaries.attr('name'),
-#)
-
 # Counties
 boundaries.register('Counties (2010)',
     file='counties/2010-mn-gis-leg/',
