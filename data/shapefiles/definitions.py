@@ -2,14 +2,14 @@ from datetime import date
 import boundaries
 import processing
 
-# state house - broken
-boundaries.register('State House districts (2002)',  # The string to be used for
+# state house
+boundaries.register('State House districts (2012)',  # The string to be used for
     # the boundary set's slug. The slug will be "federal-electoral-districts".
 
     # (Optional) The path to the shapefile's directory relative to this file.
     # If this definition file and the shapefile share the same directory, you
     # can omit this parameter, or set it to the empty string.
-    file='state-house-districts/2002-census/tl_2010_27_sldl10/',
+    file='state-house-districts/2012-mn_leg_gis/L2012/',
     # (Optional) The encoding of the shapefile's attributes. The default is
     # "ascii", but many shapefiles are encoded as "iso-8859-1".
     #encoding='iso-8859-1',
@@ -24,18 +24,18 @@ boundaries.register('State House districts (2002)',  # The string to be used for
     last_updated=date(2012, 5, 3),
     # The plural name of the boundary set, for display. By default, it will use
     # the boundary set's slug.
-    name='State House districts (2002)',
+    name='State House districts (2012)',
     # A generic singular name for a boundary in the set. If the boundary set's
     # name ends in "s", this parameter is optional, as is the case here.
-    singular='State House district (2002)',
+    singular='State House district (2012)',
 
     # (Optional) The geographic area covered by the boundary set, which is
     # often a country, a region, a municipality, etc.
     domain='Minnesota',
     # (Optional) The entity responsible for publishing the data.
-    authority='U.S. Census Bureau TIGER lines',
+    authority='Minnesota Legislative Coordinating Commission - GIS Office',
     # (Optional) A URL to the source of the data.
-    source_url='http://www.census.gov/cgi-bin/geo/shapefiles2010/main',
+    source_url='http://www.gis.leg.mn/redist2010/plans.html',
     # (Optional) A URL to the licence under which the data is made available.
     #licence_url='http://data.gc.ca/eng/open-government-licence-canada',
     # (Optional) The date from which the set's boundaries are in effect.
@@ -44,7 +44,7 @@ boundaries.register('State House districts (2002)',  # The string to be used for
     #end_date=None,
     # (Optional) Free-form text notes, often used to describe changes that were
     # made to the original source data, e.g. deleted or merged features.
-    notes='These districts were defined in 2002.',
+    notes='These districts were defined in 2012.',
     # (Optional) Any additional metadata to include in API responses.
     #extra={'id': 'ocd-division/country:ca'},
 
@@ -68,35 +68,22 @@ boundaries.register('State House districts (2002)',  # The string to be used for
     #   return f.get('FEDENAME')
 
     # A function that returns a feature's name.
-    name_func=boundaries.clean_attr('sldlst10'),
+    name_func=boundaries.clean_attr('district'),
 
     # (Optional) A function that returns a feature's identifier, which should
     # be unique across the features in the shapefile and relatively stable
     # across time: for example, a district number or a geographic code. By
     # default, features have no identifiers.
-    id_func=boundaries.attr('geoid10'),
+    id_func=boundaries.attr('id'),
     # (Optional) A function that returns a feature's slug (the last part of its
     # URL path). By default, it will use the feature's name.
-    slug_func=boundaries.attr('sldlst10'),
+    slug_func=boundaries.attr('district'),
     # (Optional) A function that returns whether a feature should be loaded. By
     # default, all features are loaded.
     #is_valid_func=lambda feature: True,
     # (Optional) A function that returns the Point at which to place a label
     # for the boundary, in EPSG:4326.
     #label_point_func=lambda feature: None,
-)
-boundaries.register('State House districts (2012)',
-    file='state-house-districts/2012-mn_leg_gis/L2012/',
-    last_updated=date(2012, 5, 3),
-    name='State House districts (2012)',
-    singular='State House district (2012)',
-    domain='Minnesota',
-    authority='Minnesota Legislative Coordinating Commission - GIS Office',
-    source_url='http://www.gis.leg.mn/redist2010/plans.html',
-    notes='These districts were defined in 2012.',
-    name_func=boundaries.clean_attr('district'),
-    id_func=boundaries.attr('id'),
-    slug_func=boundaries.attr('district'),
 )
 
 # State Senate
