@@ -171,7 +171,8 @@ boundaries.register('School districts (2013)',
 )
 boundaries.register('School districts (2018)',
     file='school-districts/2018-mngeo',
-    name='School districts (2018)'
+    last_updated=date(2018, 10, 22),
+    name='School districts (2018)',
     singular='School district (2018)',
     domain='Minnesota',
     authority='Minnesota Department of Education',
