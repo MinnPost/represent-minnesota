@@ -210,21 +210,6 @@ boundaries.register('Counties (2010)',
     slug_func=processing.simple_index_namer(['data']),
 )
 
-# State forests - broken
-#boundaries.register('State forests (2009)',
-#    file='state-forests/2009-mn-dnr/',
-#    last_updated=date(2012, 6, 22),
-#    name='State forests (2009)',
-#    singular='State forest (2009)',
-#    domain='Minnesota',
-#    authority='Minnesota Department of Natural Resources (DNR)',
-#    source_url='http://deli.dnr.state.mn.us/metadata.html?id=L220000170201',
-#    notes='',
-#    name_func=boundaries.clean_attr('sft'),
-#    id_func=boundaries.attr('sft'),
-#    slug_func=boundaries.attr('sft'),
-#)
-
 # State parks
 boundaries.register('State parks (2002)',
     file='state-parks/2002-mn-dnr/',
