@@ -22,3 +22,8 @@ Minnesota based instance of [Represent Boundaries](https://opennorth.github.io/r
 3. Run `exit;` to get out of Postgres.
 4. Run `heroku config:set BUILD_WITH_GEO_LIBRARIES=1` to instruct Heroku to build with geo libraries (this potentially takes a long time). Otherwise you'll run into issues when you try the next step.
 5. Run `python manage.py loadshapefiles` to populate the data Represent Boundaries will use (for our quantity of data, this takes a long time).
+
+## Running on Heroku
+
+1. Deploy code to Heroku by running `git push heroku master`. Currently we don't have a staging app on Heroku because the database is too large for the free version. The production version deploys to https://represent-minnesota.herokuapp.com/.
+1. To update the shapefiles in the Heroku database, run `python manage.py loadshapefiles` (use `--reload` to reload the shapefiles)
