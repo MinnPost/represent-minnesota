@@ -31,7 +31,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-      var url = "http://represent-minnesota.herokuapp.com/boundary-sets/?limit=50"
+      var url = "https://represent-minnesota.herokuapp.com/boundary-sets/?limit=50"
       $.getJSON(url, function(data){
         links = []
         $.each(data.objects, function(i, item){
