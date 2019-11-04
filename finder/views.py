@@ -6,7 +6,7 @@ from django.utils.http import is_safe_url
 
 
 def index(request):
-    return _render('index.html', request)
+    return _render('mp-index.html', request)
 
 
 def api(request):
