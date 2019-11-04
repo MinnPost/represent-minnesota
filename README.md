@@ -27,4 +27,4 @@ Minnesota based instance of [Represent Boundaries](https://opennorth.github.io/r
 
 1. Deploy production code to Heroku by running `git push heroku master`. The production version deploys to https://represent-minnesota.herokuapp.com/.
 1. Deploy staging code to Heroku by pushing to the `staging` branch of this repository. This verison deploys at https://represent-minnesota-staging.herokuapp.com/.
-1. To update the shapefiles in the Heroku database, run `python manage.py loadshapefiles` (use `--reload` to reload the shapefiles). Currently this should only happen with the full dataset in production and not staging, since the set is too big for the free database plan.
+1. To update the shapefiles in the Heroku database, run `heroku run python manage.py loadshapefiles --reload` (use `--reload` when you need to reload existing shapefiles). Currently this should only happen with the full dataset in production and not staging, since the set is too big for the free database plan.
