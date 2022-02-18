@@ -100,6 +100,19 @@ boundaries.register('State Senate districts (2012)',
     id_func=boundaries.attr('district'),
     slug_func=boundaries.attr('district'),
 )
+boundaries.register('State Senate districts (2022)',
+    file='state-senate-districts/state-senate-2022',
+    last_updated=date(2022, 2, 15),
+    name='State Senate districts (2022)',
+    singular='State Senate district (2022)',
+    domain='Minnesota',
+    authority='Minnesota Judicial Branch Special Redistricting Panel 2021',
+    source_url='https://www.mncourts.gov/2021RedistrictingPanel',
+    notes='This shapefile was built from the block equivalency files released by the redistricting panel, using census block data from the Legislative Coordinating Commission.',
+    name_func=boundaries.attr('DistrictID'),
+    id_func=boundaries.attr('DistrictID'),
+    slug_func=boundaries.attr('DistrictID')
+)
 
 # Congress
 boundaries.register('Congressional districts (2002)', 
