@@ -85,6 +85,19 @@ boundaries.register('State House districts (2012)',  # The string to be used for
     # for the boundary, in EPSG:4326.
     #label_point_func=lambda feature: None,
 )
+boundaries.register('State House districts (2022)',
+    file='state-house-districts/2022-state-house-districts',
+    last_updated=date(2022, 2, 15),
+    name='State House districts (2022)',
+    singular='State House district (2022)',
+    domain='Minnesota',
+    authority='Minnesota Judicial Branch Special Redistricting Panel 2021',
+    source_url='https://www.mncourts.gov/2021RedistrictingPanel',
+    notes='This shapefile was built from the block equivalency files released by the redistricting panel, using census block data from the Legislative Coordinating Commission.',
+    name_func=boundaries.attr('DistrictID'),
+    id_func=boundaries.attr('DistrictID'),
+    slug_func=boundaries.attr('DistrictID')
+)
 
 # State Senate
 boundaries.register('State Senate districts (2012)', 
