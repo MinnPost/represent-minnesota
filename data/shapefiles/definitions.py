@@ -402,6 +402,23 @@ boundaries.register('Wards (2012)',
     slug_func=processing.simple_index_namer(['ward_id'], normalizer=lambda x: x.lstrip('0')), 
 )
 
+# Minneapolis council wards 2022
+# Ideally will be replaced when the statewide wards data set above is updated for 2022.
+# Adding this now for redistricting analysis purposes.
+boundaries.register('Minneapolis Council Wards (2022)',
+    file='wards/minneapolis-council-wards-2022/',
+    last_updated=date(2022, 3, 3),
+    name='Minneapolis Council Wards (2022)',
+    singular='Minneapolis Council Ward (2022)',
+    domain='Minnesota',
+    authority='Minneapolis Charter Commission',
+    source_url='https://www.minneapolismn.gov/government/programs-initiatives/redistricting/',
+    notes='This dataset comes from the redisctr map created by the city Redistricting Group',
+    name_func=boundaries.attr('districtr'),
+    id_func=boundaries.attr('districtr'),
+    slug_func=boundaries.attr('districtr')
+)
+
 # Minneapolis neighborhoods
 boundaries.register('Minneapolis Neighborhoods (2013)',
     file='neighborhoods/2013-minneapolis-neighborhoods/',
@@ -486,6 +503,20 @@ boundaries.register('Minneapolis Parks and Recreation districts (2014)',
     name_func=processing.simple_index_namer(['id']),
     id_func=processing.simple_index_namer(['id']),
     slug_func=processing.simple_index_namer(['id']), 
+)
+
+boundaries.register('Minneapolis Park and Recreation Board Districts (2022)',
+    file='parks-recreation-districts/minneapolis-park-board-districts-2022/',
+    last_updated=date(2022, 3, 3),
+    name='Minneapolis Park and Recreation Board Districts (2022)',
+    singular='Minneapolis Park and Recreation Board District (2022)',
+    domain='Minnesota',
+    authority='Minneapolis Charter Commission',
+    source_url='https://www.minneapolismn.gov/government/programs-initiatives/redistricting/',
+    notes='Shapefiles downloaded from redistrictr of final plans from city redistricting group',
+    name_func=boundaries.attr('districtr'),
+    id_func=boundaries.attr('districtr'),
+    slug_func=boundaries.attr('districtr')
 )
 
 boundaries.register('Minnesota State (2014)',
