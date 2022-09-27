@@ -154,6 +154,19 @@ boundaries.register('Congressional districts (2012)',
     id_func=boundaries.attr('id'),
     slug_func=boundaries.attr('district'),
 )
+boundaries.register('Congressional districts (2022)',
+    file='congressional-districts/c2022-shp/',
+    last_updated=date(2022, 2, 15),
+    name='Congressional districts (2022)',
+    singular='Congressional district (2022)',
+    domain='Minnesota',
+    authority='Minnesota Legislative Coordinating Commission - GIS Office',
+    source_url='http://www.gis.leg.mn/redist2020/plans.html',
+    notes='These districts were defined in 2022.',
+    name_func=boundaries.clean_attr('district'),
+    id_func=boundaries.attr('id'),
+    slug_func=boundaries.attr('district'),
+)
 
 # School districts
 boundaries.register('School districts (2010)',
