@@ -6,14 +6,14 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-dj-database-url = "*"
-django-compressor = "*"
+dj-database-url = "==0.5.0"
+django-compressor = "==4.1"
 django = "==2.2.8"
 gunicorn = "==20.1.0"
 represent-boundaries = "*"
-psycopg2-binary = "*"
+psycopg2-binary = "==2.9.3"
 python-dotenv = "*"
-whitenoise = "*"
+whitenoise = "==6.2.0"
 
 [requires]
 python_version = "3.7"
