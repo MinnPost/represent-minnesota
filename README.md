@@ -27,6 +27,7 @@ Minnesota based instance of [Represent Boundaries](https://opennorth.github.io/r
 
 1. Find the dataset. If it's a redistricting of an existing boundary, you can often find it at the same place, with changing the URL for the year.
 1. Download the shapefiles and put them into a subfolder under `data/shapefiles`. Update `data/shapefiles/definitions.py` to match the new file path and whatever information you have from the source.
+1. With updated files, things like `name_func`, `id_func`, and `slug_func` will sometimes need new parameters. Sometimes this information is available in metadata for the new set.
 1. After pushing to Heroku with the new shapefiles, follow the steps below for running on Heroku.
 
 ## Running on Heroku
