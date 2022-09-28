@@ -221,6 +221,19 @@ boundaries.register('School districts (2018)',
     id_func=processing.simple_index_namer(['UNI_MAJ']),
     slug_func=processing.simple_index_namer(['UNI_MAJ']),
 )
+boundaries.register('School districts (2021)',
+    file='school-districts/2021-mngeo',
+    last_updated=date(2021, 11, 9),
+    name='School districts (2021)',
+    singular='School district (2021)',
+    domain='Minnesota',
+    authority='Minnesota Department of Education',
+    source_url='https://gisdata.mn.gov/dataset/bdry-school-district-boundaries',
+    notes='Aitkin and Minneapolis share same ID',
+    name_func=processing.simple_index_namer(['UNI_MAJ']),
+    id_func=processing.simple_index_namer(['UNI_MAJ']),
+    slug_func=processing.simple_index_namer(['UNI_MAJ']),
+)
 
 # Counties
 boundaries.register('Counties (2010)',
