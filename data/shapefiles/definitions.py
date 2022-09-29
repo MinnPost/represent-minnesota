@@ -416,6 +416,7 @@ boundaries.register('Minor civil divisions (2020)',
 )
 
 # District courts (up to date as of 2012)
+# it's not clear if we need an update on this
 boundaries.register('District courts (2008)',
     file='district-courts/2008-mn_gis_leg/',
     last_updated=date(2012, 7, 13),
@@ -472,6 +473,7 @@ boundaries.register('ZIP codes (2020)',
 )
 
 # County Commissioner districts (up to date as of 2012)
+# todo: we would like an update on this somehow
 boundaries.register('County Commissioner districts (2012)',
     file='county-commissioner/2012-mn_sos/',
     last_updated=date(2012, 7, 24),
@@ -519,6 +521,7 @@ boundaries.register('Soil and Water districts (2012)',
 # Wards (up to date as of 2012)
 # In theory the id for this should be the MCD code with the Ward code, but
 # since the MCD code is not with the data, then we use the MCD name
+# todo: we would like an update on this somehow
 boundaries.register('Wards (2012)',
     file='wards/2012-mn_sos/',
     last_updated=date(2012, 7, 24),
@@ -660,6 +663,19 @@ boundaries.register('Minnesota State (2014)',
     authority='Minnesota Department of Transportation',
     source_url='http://www.dot.state.mn.us/maps/gdma/gis-data.html',
     notes='Manually reprojected with ogr2ogr mn-state.shp state.shp -s_srs EPSG:26915 -t_srs EPSG:4326',
+    name_func=processing.simple_index_namer(['STATE_FIPS']),
+    id_func=processing.simple_index_namer(['STATE_FIPS']),
+    slug_func=processing.simple_index_namer(['STATE_FIPS']), 
+)
+boundaries.register('Minnesota State (2022)',
+    file='state-mn/2022-mndot/',
+    last_updated=date(2022, 9, 20),
+    name='Minnesota State (2022)',
+    singular='Minnesota State (2022)',
+    domain='Minnesota',
+    authority='Minnesota Department of Transportation',
+    source_url='https://gisdata.mn.gov/dataset/bdry-state',
+    notes='',
     name_func=processing.simple_index_namer(['STATE_FIPS']),
     id_func=processing.simple_index_namer(['STATE_FIPS']),
     slug_func=processing.simple_index_namer(['STATE_FIPS']), 
