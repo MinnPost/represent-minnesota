@@ -34,7 +34,7 @@
         <h1>Represent Minnesota</h1>
         <h3>A Minnesota boundary service</h3>
     
-        <p>Represent Minnesota is an implementation of <a href="">Open North’s Represent Boundaries</a> API populated with Minnesota geographic data sets.</p> 
+        <p>Represent Minnesota is an implementation of <a href="https://github.com/opennorth/represent-boundaries">Open North’s Represent Boundaries</a> API populated with Minnesota geographic data sets.</p> 
         
         <p>Represent Minnesota is maintained by <a href="https://www.minnpost.com">MinnPost</a>. Code and further information can be found in this 
           project’s <a href="https://github.com/MinnPost/represent-minnesota">GitHub repo</a>.</p>
@@ -50,11 +50,11 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-      var url = "https://represent-minnesota.herokuapp.com/boundary-sets/?limit=50"
+      var url = "/boundary-sets/?limit=50"
       $.getJSON(url, function(data){
         links = []
         $.each(data.objects, function(i, item){
-          s = "<li><a href='https://represent-minnesota.herokuapp.com" + item.url + "'>" + item.name + "</a>";
+          s = "<li><a href='" + item.url + "'>" + item.name + "</a>";
           links.push(s);
         });
         

@@ -30,6 +30,10 @@ Minnesota based instance of [Represent Boundaries](https://opennorth.github.io/r
 1. With updated files, things like `name_func`, `id_func`, and `slug_func` will sometimes need new parameters. Sometimes this information is available in metadata for the new set.
 1. After pushing to Heroku with the new shapefiles, follow the steps below for running on Heroku.
 
+### When redistricting happens
+
+It can be hard to find updated data sources. The state may release a Redistricting boundary set, like [this one from 2020](https://gisdata.mn.gov/dataset/society-redistricting-2020), which "includes MN Secretary of State election data from 2012-2020 that was disaggregated to census block level and aggregated to voting districts, minor civil divisions and counties." In this case, it's possible to separate census blocks, counties, minor civil divisions, and voting districts and run them within separate folders.
+
 ## Running on Heroku
 
 1. Deploy production code to Heroku by running `git push heroku master`. The production version deploys to https://represent-minnesota.herokuapp.com/.
