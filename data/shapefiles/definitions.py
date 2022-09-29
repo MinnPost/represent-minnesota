@@ -387,6 +387,19 @@ boundaries.register('Minor civil divisions (2010)',
     id_func=boundaries.attr('mcd'),
     slug_func=boundaries.attr('mcd'),    
 )
+boundaries.register('Minor civil divisions (2020)',
+    file='minor-civil-divisions/2020-redistricting/',
+    last_updated=date(2021, 10, 8),
+    name='Minor civil divisions (2020)',
+    singular='Minor civil division (2020)',
+    domain='Minnesota',
+    authority='Minnesota Legislative Coordinating Commission - GIS Office',
+    source_url='https://gisdata.mn.gov/dataset/society-redistricting-2020',
+    notes='redistricting zip includes mcd files',
+    name_func=boundaries.clean_attr('mcd'),
+    id_func=boundaries.attr('mcd'),
+    slug_func=boundaries.attr('mcd'),    
+)
 
 # District courts
 boundaries.register('District courts (2008)',
