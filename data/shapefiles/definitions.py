@@ -2,7 +2,7 @@ from datetime import date
 import boundaries
 import processing
 
-# state house
+# state house (up to date as of 2022)
 boundaries.register('State House districts (2012)',  # The string to be used for
     # the boundary set's slug. The slug will be "federal-electoral-districts".
 
@@ -99,7 +99,7 @@ boundaries.register('State House districts (2022)',
     slug_func=boundaries.attr('DistrictID')
 )
 
-# State Senate
+# State Senate (up to date as of 2022)
 boundaries.register('State Senate districts (2012)', 
     file='state-senate-districts/2012-mn_leg_gis/S2012/',
     last_updated=date(2012, 5, 3),
@@ -127,7 +127,7 @@ boundaries.register('State Senate districts (2022)',
     slug_func=boundaries.attr('DistrictID')
 )
 
-# Congress
+# Congress (up to date as of 2022)
 boundaries.register('Congressional districts (2002)', 
     file='congressional-districts/2002-census/tl_2010_27_cd111/',
     last_updated=date(2012, 5, 3),
@@ -168,7 +168,7 @@ boundaries.register('Congressional districts (2022)',
     slug_func=boundaries.attr('district'),
 )
 
-# School districts
+# School districts (up to date as of 2021)
 boundaries.register('School districts (2010)',
     file='school-districts/2010-census/',
     last_updated=date(2012, 5, 3),
@@ -235,7 +235,7 @@ boundaries.register('School districts (2021)',
     slug_func=processing.simple_index_namer(['SDNUMBER']),
 )
 
-# Counties
+# Counties (up to date as of 2020)
 boundaries.register('Counties (2010)',
     file='counties/2010-mn-gis-leg/',
     last_updated=date(2012, 11, 12),
@@ -249,8 +249,21 @@ boundaries.register('Counties (2010)',
     id_func=processing.simple_index_namer(['data']),
     slug_func=processing.simple_index_namer(['data']),
 )
+boundaries.register('Counties (2020)',
+    file='counties/2020-redistricting/',
+    last_updated=date(2021, 10, 8),
+    name='Counties (2020)',
+    singular='County (2020)',
+    domain='Minnesota',
+    authority='Minnesota Legislative Coordinating Commission - GIS Office',
+    source_url='https://gisdata.mn.gov/dataset/society-redistricting-2020',
+    notes='redistricting zip includes cty files',
+    name_func=processing.simple_index_namer(['data']),
+    id_func=processing.simple_index_namer(['data']),
+    slug_func=processing.simple_index_namer(['data']),
+)
 
-# State parks
+# State parks (up to date as of 2002)
 boundaries.register('State parks (2002)',
     file='state-parks/2002-mn-dnr/',
     last_updated=date(2012, 6, 22),
@@ -264,8 +277,9 @@ boundaries.register('State parks (2002)',
     id_func=boundaries.attr('pgm_prj'),
     slug_func=boundaries.attr('pgm_prj'),
 )
+# there is an updated version from 2016, but it's not clear how to match the data structure.
 
-# National forests
+# National forests (up to date as of 2008)
 boundaries.register('National forests (2008)',
     file='national-forests/2008-mn-dnr/',
     last_updated=date(2012, 6, 22),
@@ -280,7 +294,7 @@ boundaries.register('National forests (2008)',
     slug_func=processing.simple_index_namer(['region', 'forest_num'], normalizer=lambda x: x.lstrip('0')),
 )
 
-# Voting precincts (will take awhile)
+# Voting precincts (will take awhile) (up to date as of 2022)
 boundaries.register('Voting precincts (2010)',
     file='voting-precincts/2010-mn_leg_gis/',
     last_updated=date(2012, 6, 22),
@@ -373,7 +387,7 @@ boundaries.register('Voting precincts (2022)',
     slug_func=boundaries.attr('vtdid'),
 )
 
-# Minor civic divisons (cities and towns) (will take awhile)
+# Minor civic divisons (cities and towns) (will take awhile) (up to date as of 2020)
 boundaries.register('Minor civil divisions (2010)',
     file='minor-civil-divisions/2010-mn_leg_gis/',
     last_updated=date(2012, 6, 22),
@@ -401,7 +415,7 @@ boundaries.register('Minor civil divisions (2020)',
     slug_func=boundaries.attr('mcd'),    
 )
 
-# District courts
+# District courts (up to date as of 2012)
 boundaries.register('District courts (2008)',
     file='district-courts/2008-mn_gis_leg/',
     last_updated=date(2012, 7, 13),
@@ -429,7 +443,7 @@ boundaries.register('District courts (2012)',
     slug_func=processing.simple_index_namer(['juddist'], normalizer=lambda x: x.lstrip('0')),
 )
 
-# Zip codes
+# Zip codes (up to date as of 2020)
 boundaries.register('ZIP codes (2010)',
     file='zipcodes/2010-census/',
     last_updated=date(2012, 7, 18),
@@ -443,8 +457,21 @@ boundaries.register('ZIP codes (2010)',
     id_func=boundaries.attr('ZCTA5CE10'),
     slug_func=boundaries.attr('ZCTA5CE10'), 
 )
+boundaries.register('ZIP codes (2020)',
+    file='zipcodes/2020-census/',
+    last_updated=date(2022, 6, 22),
+    name='ZIP codes (2020)',
+    singular='Zip code (2020)',
+    domain='Minnesota',
+    authority='U.S. Census Bureau TIGER lines',
+    source_url='https://gisdata.mn.gov/dataset/bdry-zip-code-tabulation-areas',
+    notes='',
+    name_func=boundaries.clean_attr('ZCTA5CE10'),
+    id_func=boundaries.attr('ZCTA5CE10'),
+    slug_func=boundaries.attr('ZCTA5CE10'), 
+)
 
-# County Commissioner districts
+# County Commissioner districts (up to date as of 2012)
 boundaries.register('County Commissioner districts (2012)',
     file='county-commissioner/2012-mn_sos/',
     last_updated=date(2012, 7, 24),
@@ -459,7 +486,7 @@ boundaries.register('County Commissioner districts (2012)',
     slug_func=processing.simple_index_namer(['ccd_id'], normalizer=lambda x: x.lstrip('0')),    
 )
 
-# Hospital districts
+# Hospital districts (up to date as of 2012)
 boundaries.register('Hospital districts (2012)',
     file='hospitals/2012-mn_sos/',
     last_updated=date(2012, 7, 24),
@@ -474,7 +501,7 @@ boundaries.register('Hospital districts (2012)',
     slug_func=processing.simple_index_namer(['hospdist'], normalizer=lambda x: x.lstrip('0')),  
 )
 
-# Soil and water districts
+# Soil and water districts (up to date as of 2012)
 boundaries.register('Soil and Water districts (2012)',
     file='soil-water/2012-mn_sos/',
     last_updated=date(2012, 7, 24),
@@ -489,7 +516,7 @@ boundaries.register('Soil and Water districts (2012)',
     slug_func=processing.simple_index_namer(['soilwdist'], normalizer=lambda x: x.lstrip('0')), 
 )
 
-# Wards
+# Wards (up to date as of 2012)
 # In theory the id for this should be the MCD code with the Ward code, but
 # since the MCD code is not with the data, then we use the MCD name
 boundaries.register('Wards (2012)',
@@ -506,7 +533,7 @@ boundaries.register('Wards (2012)',
     slug_func=processing.simple_index_namer(['ward_id'], normalizer=lambda x: x.lstrip('0')), 
 )
 
-# Minneapolis council wards 2022
+# Minneapolis council wards (up to date as of 2022)
 # Ideally will be replaced when the statewide wards data set above is updated for 2022.
 # Adding this now for redistricting analysis purposes.
 boundaries.register('Minneapolis Council Wards (2022)',
@@ -523,7 +550,7 @@ boundaries.register('Minneapolis Council Wards (2022)',
     slug_func=boundaries.attr('districtr')
 )
 
-# Minneapolis neighborhoods
+# Minneapolis neighborhoods (up to date as of 2013)
 boundaries.register('Minneapolis Neighborhoods (2013)',
     file='neighborhoods/2013-minneapolis-neighborhoods/',
     last_updated=date(2013, 6, 4),
@@ -538,7 +565,7 @@ boundaries.register('Minneapolis Neighborhoods (2013)',
     slug_func=boundaries.attr('neighbor_1'), 
 )
 
-# St. Paul district councils (neighborhoods)
+# St. Paul district councils (neighborhoods) (up to date as of 2014)
 boundaries.register('St. Paul District Councils (2012)',
     file='neighborhoods/2012-st-paul-district-councils/',
     last_updated=date(2013, 6, 4),
@@ -566,7 +593,7 @@ boundaries.register('St. Paul District Councils (2014)',
     slug_func=processing.simple_index_namer(['DISTRICT']), 
 )
 
-# MetCouncil districts
+# MetCouncil districts (up to date as of 2013)
 boundaries.register('Metropolitan Council districts (2013)',
     file='metropolitan-council-districts/',
     last_updated=date(2013, 10, 10),
@@ -581,7 +608,7 @@ boundaries.register('Metropolitan Council districts (2013)',
     slug_func=processing.simple_index_namer(['district']), 
 )
 
-# Minneapolis Parks and Recreation districts
+# Minneapolis Parks and Recreation districts (up to date as of 2022)
 boundaries.register('Minneapolis Parks and Recreation districts (2012)',
     file='parks-recreation-districts/2012-minneapolis-parks-recreation/',
     last_updated=date(2013, 10, 17),
@@ -622,6 +649,8 @@ boundaries.register('Minneapolis Parks and Recreation districts (2022)',
     slug_func=boundaries.attr('districtr')
 )
 
+# state of Minnesota (up to date as of 2022
+# but there's maybe a really unclear  "reprojection" that nees to happen)
 boundaries.register('Minnesota State (2014)',
     file='state-mn/2014-mndot/',
     last_updated=date(2014, 7, 30),
