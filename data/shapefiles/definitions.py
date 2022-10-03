@@ -409,10 +409,10 @@ boundaries.register('Minor civil divisions (2020)',
     domain='Minnesota',
     authority='Minnesota Legislative Coordinating Commission - GIS Office',
     source_url='https://gisdata.mn.gov/dataset/society-redistricting-2020',
-    notes='redistricting zip includes mcd files',
-    name_func=boundaries.clean_attr('mcd'),
+    notes='Redistricting zip includes mcd files. the fips number is used for election results so we need access to it.',
+    name_func=boundaries.clean_attr('fips'),
     id_func=boundaries.attr('mcd'),
-    slug_func=boundaries.attr('mcd'),    
+    slug_func=boundaries.attr('mcd'),
 )
 
 # District courts (up to date as of 2012)
